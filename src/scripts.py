@@ -115,8 +115,57 @@ SCRIPTS = [
 						"command": "sudo pacman -Sy linux-lts linux-lts-headers;exec bash",
 						"description": "sudo pacman -Sy linux-lts linux-lts-headers",
 					},
+					{
+						"title": "Install CachyOS Kernel",
+						"subtitle": "This command installs linux CachyOS kernel, optimized for desktop and most recent hardware. It is suggested to install it if you have cachyos repos.",
+						"command": "yay -S linux-cachyos;exec bash",
+						"description": "yay -S linux-cachyos",
+					},
 				]
 			},
+			{
+			"title":  "Repositories",
+			"subtitle": "Install additional repositories for more packages",
+			"scripts":
+				[
+					{
+						"title": "Install Chaotic repository",
+						"subtitle": "Add Chaotic AUR repository to pacman. Makes some packages from the AUR directly intallable with pacman",
+						"command": "sudo bash -c \"$(curl -fsSL https://raw.githubusercontent.com/NyarchLinux/NyarchScript/refs/heads/master/src/extra_scripts/install_chaotic.sh)\"; exec bash",
+						"description": "sudo curl https://raw.githubusercontent.com/NyarchLinux/NyarchScript/refs/heads/master/src/extra_scripts/install_chaotic.sh | sudo bash",
+					},
+					{
+						"title": "Uninstall Chaotic repository",
+						"subtitle": "Remove Chaotic AUR repository from pacman",
+						"command": "sudo bash -c \"$(curl -fsSL https://raw.githubusercontent.com/NyarchLinux/NyarchScript/refs/heads/master/src/extra_scripts/uninstall_chaotic.sh)\"; exec bash",
+						"description": "sudo curl https://raw.githubusercontent.com/NyarchLinux/NyarchScript/refs/heads/master/src/extra_scripts/uninstall_chaotic.sh | sudo bash",
+					},
+					{
+						"title": "Install Nyarch repository",
+						"subtitle": "Add Nyarch repository to pacman. (Already enabled by default on Nyarch)",
+						"command": "sudo bash -c \"$(curl -fsSL https://raw.githubusercontent.com/NyarchLinux/NyarchScript/refs/heads/master/src/extra_scripts/install_nyarch.sh)\"; exec bash",
+						"description": "sudo curl https://raw.githubusercontent.com/NyarchLinux/NyarchScript/refs/heads/master/src/extra_scripts/install_nyarch.sh | sudo bash",
+					},
+					{
+						"title": "Uninstall Nyarch repository",
+						"subtitle": "Remove Nyarch repository from pacman",
+						"command": "sudo bash -c \"$(curl -fsSL https://raw.githubusercontent.com/NyarchLinux/NyarchScript/refs/heads/master/src/extra_scripts/uninstall_nyarch.sh)\"; exec bash",
+						"description": "sudo curl https://raw.githubusercontent.com/NyarchLinux/NyarchScript/refs/heads/master/src/extra_scripts/uninstall_nyarch.sh | sudo bash",
+					},
+					{
+						"title": "Install Cachyos repository",
+						"subtitle": "Add Cachyos repository to pacman. Packages optimized for latest processors",
+						"command": "curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz && tar xvf cachyos-repo.tar.xz && cd cachyos-repo && sudo ./cachyos-repo.sh; exec bash",
+						"description": "curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz\ntar xvf cachyos-repo.tar.xz\ncd cachyos-repo\nsudo ./cachyos-repo.sh",
+					},
+					{
+						"title": "Remove Cachyos repository",
+						"subtitle": "Remove Cachyos repository from pacman",
+						"command": "curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz && tar xvf cachyos-repo.tar.xz && cd cachyos-repo && sudo ./cachyos-repo.sh --remove; exec bash",
+						"description": "curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz\ntar xvf cachyos-repo.tar.xz\ncd cachyos-repo\nsudo ./cachyos-repo.sh --remove",
+					},
+				]
+			}
 			{
 			"title":  "Themes",
 			"subtitle": None,
@@ -176,7 +225,7 @@ SCRIPTS = [
 						"description": "yay -Sy libwacom-surface",
 					},
 				]
-			}
+			},
 		]
 	},
 	{
