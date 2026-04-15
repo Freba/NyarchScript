@@ -9,7 +9,7 @@ fi
 echo "Removing [chaotic-aur] from /etc/pacman.conf..."
 # Removes the repository header and the specific Include line
 sed -i '/^\[chaotic-aur\]/d' /etc/pacman.conf
-sed -i '|^Include = /etc/pacman.d/chaotic-mirrorlist|d' /etc/pacman.conf
+sed -i '\|^Include = /etc/pacman.d/chaotic-mirrorlist|d' /etc/pacman.conf
 
 echo "Uninstalling chaotic-keyring and chaotic-mirrorlist..."
 # Remove the packages if they exist
