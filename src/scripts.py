@@ -165,7 +165,7 @@ SCRIPTS = [
 						"description": "curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz\ntar xvf cachyos-repo.tar.xz\ncd cachyos-repo\nsudo ./cachyos-repo.sh --remove",
 					},
 				]
-			}
+			},
 			{
 			"title":  "Themes",
 			"subtitle": None,
