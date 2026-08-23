@@ -237,6 +237,13 @@ SCRIPTS = [
 						"command": "sudo pacman -S niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk matugen cava qt6-multimedia-ffmpeg;exec bash",
 						"description": "sudo pacman -S niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk matugen cava qt6-multimedia-ffmpeg",
 					},
+                    {
+						"title": "Install Noctalia",
+						"subtitle": "Install the Noctalia shelll",
+						"command": "sudo pacman -S noctalia",
+                        "description": "sudo pacman -S noctalia",
+        			},
+
 				]
 			},
 		]
