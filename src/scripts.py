@@ -226,6 +226,19 @@ SCRIPTS = [
 					},
 				]
 			},
+			{
+            "title": "WMs and shells",
+			"subtitle": None,
+			"scripts":
+				[
+					{
+						"title": "Install niri",
+						"subtitle": "Install the niri tiling WM",
+						"command": "sudo pacman -S niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk matugen cava qt6-multimedia-ffmpeg;exec bash",
+						"description": "sudo pacman -S niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk matugen cava qt6-multimedia-ffmpeg",
+					},
+				]
+			},
 		]
 	},
 	{
