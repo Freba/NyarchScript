@@ -232,19 +232,11 @@ SCRIPTS = [
 			"scripts":
 				[
 					{
-						"title": "Install niri",
-						"subtitle": "Install the niri tiling WM",
-						"command": "sudo pacman -S niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk matugen cava qt6-multimedia-ffmpeg;exec bash",
-						"description": "sudo pacman -S niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk matugen cava qt6-multimedia-ffmpeg",
+						"title": "Install niri and Noctalia",
+						"subtitle": "Install the niri tiling WM and Noctalia shell",
+						"command": "sudo pacman -S niri noctalia xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk matugen cava qt6-multimedia-ffmpeg;exec bash",
+						"description": "sudo pacman -S niri noctalia xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk matugen cava qt6-multimedia-ffmpeg",
 					},
-                    {
-						"title": "Install Noctalia",
-						"subtitle": "Install the Noctalia shelll",
-						"command": "sudo pacman -S noctalia",
-                        "description": "sudo pacman -S noctalia",
-        			},
-
-				]
 			},
 		]
 	},
